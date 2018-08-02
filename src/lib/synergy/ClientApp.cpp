@@ -280,6 +280,11 @@ ClientApp::handleClientRestart(const Event&, void* vtimer)
 void
 ClientApp::scheduleClientRestart(double retryTime)
 {
+	if (m_suspended) {
+		LOG((CLOG_DEBUG "suspended, ignoring restart scheduler"));
+		return;
+	}
+
     // install a timer and handler to retry later
     LOG((CLOG_DEBUG "retry in %.0f seconds", retryTime));
     EventQueueTimer* timer = m_events->newOneShotTimer(retryTime, NULL);
@@ -310,10 +315,8 @@ ClientApp::handleClientFailed(const Event& e, void*)
     }
     else {
         LOG((CLOG_WARN "failed to connect to server: %s", info->m_what.c_str()));
-        if (!m_suspended) {
-            scheduleClientRestart(nextRestartTimeout());
-        }
-    }
+		scheduleClientRestart(nextRestartTimeout());
+	}
     delete info;
 }
 
@@ -322,11 +325,11 @@ void
 ClientApp::handleClientDisconnected(const Event&, void*)
 {
     LOG((CLOG_NOTE "disconnected from server"));
-    if (!args().m_restartable) {
-        m_events->addEvent(Event(Event::kQuit));
+    if (args().m_restartable) {
+		scheduleClientRestart(nextRestartTimeout());
     }
-    else if (!m_suspended) {
-        scheduleClientRestart(nextRestartTimeout());
+    else {
+		m_events->addEvent(Event(Event::kQuit));
     }
     updateStatus();
 }
