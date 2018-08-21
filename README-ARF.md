@@ -12,8 +12,8 @@ This repo is a fork of [symless/synergy-core](https://github.com/symless/synergy
 
 ## TODO
 
-- [x] CM start scripts
-- [ ] CM Docker files used to build binaries
+- [x] CM initial start scripts
+- [x] CM initial Docker files used to build binaries
 - [ ] CM configuration files
 - [ ] Create install script for Linux
 - [ ] Create install script for Windows
