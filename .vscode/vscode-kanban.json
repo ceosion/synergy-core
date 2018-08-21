@@ -1,0 +1,149 @@
+{
+  "done": [
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:28:54.403Z",
+      "id": "20180821162854_111465235_88275ba006a33e68bd3628e7ddfb4980",
+      "references": [],
+      "title": "CM initial Docker files used to build binaries"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:28:20.589Z",
+      "id": "20180821162820_495056577_a8c5b8d2dcf5b68f8ef3a7553d6f287e",
+      "references": [],
+      "title": "CM initial run scripts for server and client, windows and linux"
+    }
+  ],
+  "in-progress": [],
+  "testing": [],
+  "todo": [
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:32:16.205Z",
+      "id": "20180821163216_281764830_3d2bb3cd423ebfae4c7472dcfd08484b",
+      "references": [],
+      "title": "KM sharing stops if slave Windows machine enters elevated user mode",
+      "type": "bug"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:31:34.142Z",
+      "id": "20180821163134_307527255_eadfc1d9496457351c7193955fcb2869",
+      "references": [],
+      "title": "Auto-detect environment for configuration selection"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:32:34.319Z",
+      "id": "20180821163234_1845297_81a1b77faee54fde1dad1348e7f54582",
+      "references": [],
+      "title": "Client/server auto discovery over LAN"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:29:55.877Z",
+      "id": "20180821162955_143540006_12917168c1e98530311efe4f41ab8317",
+      "references": [],
+      "title": "CM configuration files"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:30:09.550Z",
+      "id": "20180821163009_128253375_2ff4c735160931bcb81d6012a3806846",
+      "references": [],
+      "title": "Create install script for Linux"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:30:20.565Z",
+      "id": "20180821163020_353371486_3aec6cee9fe1b560eeeffe4e0e963cdf",
+      "references": [],
+      "title": "Create install script for Windows"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:30:37.530Z",
+      "id": "20180821163037_460577613_3684bc129997618e7aa331d645dcf7d7",
+      "references": [],
+      "title": "Determine how to launch synergy at boot"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:33:12.231Z",
+      "id": "20180821163312_38358643_38f8e99a0067b9765ebfc523d35edd97",
+      "references": [],
+      "title": "Encrypt network traffic"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:32:57.769Z",
+      "id": "20180821163257_513867898_a4e169cfd8a4405dfbf3bfcd7db655bd",
+      "references": [],
+      "title": "Show history of previously entered server IPs in client run script"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:31:16.036Z",
+      "id": "20180821163116_571667590_11d746c8fa1b807f7fb042d141205cc1",
+      "references": [],
+      "title": "Sticky screens/delayed transition"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:30:55.321Z",
+      "id": "20180821163055_271571545_569b567027ff540c51e176b35525aff7",
+      "references": [],
+      "title": "Syncronize computer screen locking"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:31:53.833Z",
+      "id": "20180821163153_587091793_c74057096edb2908eb460a6ee1c2db24",
+      "references": [],
+      "title": "Write log output to file, ensure proper house keeping"
+    },
+    {
+      "assignedTo": {
+        "name": "Alex Ford"
+      },
+      "creation_time": "2018-08-21T16:33:39.587Z",
+      "details": {
+        "content": "Run Virtual Box on Ubuntu 18.04 host, with Ubuntu 14.04 guest. Have synergy\n    connected so that Ubuntu 18.04 host is KM sharing with a Windows 10 host.\n    Click on the Ubuntu 14.04 guest's desktop, then try to move to the Windows\n    10 host that is connected over synergy. Observe that the mouse is unable to\n    move to the Windows 10 host.\n    Workaround: clicking outside of the VM, on the Ubuntu 18.04 host, allows KM\n    sharing functionality to begin working again.",
+        "mime": "text/markdown"
+      },
+      "id": "20180821163339_391251894_6cd77dfe7ab958f7287f4e538a51d867",
+      "references": [],
+      "title": "KM sharing stops if input control is locked to a Virtual Machine",
+      "type": "bug"
+    }
+  ]
+}

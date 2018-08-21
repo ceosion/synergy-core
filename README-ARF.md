@@ -12,6 +12,9 @@ This repo is a fork of [symless/synergy-core](https://github.com/symless/synergy
 
 ## TODO
 
+**The following have been moved to the VS Code Kanban extension! Do NOT edit the
+following list any further!**
+
 - [x] CM initial start scripts
 - [x] CM initial Docker files used to build binaries
 - [ ] CM configuration files
@@ -26,3 +29,11 @@ This repo is a fork of [symless/synergy-core](https://github.com/symless/synergy
 - [ ] Auto-discovery over private LANs
 - [ ] Provide history of previously used server IPs in client run scripts
 - [ ] Encrypt network traffic
+- [ ] BUG: KM sharing stops if input control is locked to a Virtual Machine
+    Run Virtual Box on Ubuntu 18.04 host, with Ubuntu 14.04 guest. Have synergy
+    connected so that Ubuntu 18.04 host is KM sharing with a Windows 10 host.
+    Click on the Ubuntu 14.04 guest's desktop, then try to move to the Windows
+    10 host that is connected over synergy. Observe that the mouse is unable to
+    move to the Windows 10 host.
+    Workaround: clicking outside of the VM, on the Ubuntu 18.04 host, allows KM
+    sharing functionality to begin working again.
