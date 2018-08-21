@@ -6,6 +6,7 @@ echo.
 echo Starting in server mode...
 echo.
 
+REM TODO allow config to be specified as script argument and skip the next part
 REM List the available conf files and prompt for selection
 REM TODO
 

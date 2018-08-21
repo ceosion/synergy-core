@@ -6,6 +6,7 @@ echo ""
 echo "Starting in server mode..."
 echo ""
 
+# TODO allow config to be specified as script argument and skip the next part
 # List the available conf files and prompt for selection
 listOfConfs=($(ls *.conf))
 index=0
