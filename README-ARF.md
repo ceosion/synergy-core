@@ -10,6 +10,16 @@ This repo is a fork of [symless/synergy-core](https://github.com/symless/synergy
 
 **License:** GPL-2.0 (Inherited)
 
+## Building and Such
+
+- For the most part, the directions provided in the upstream repository's README.md is pretty spot on and easy enough to follow.
+    - For convenience, here is the link to the actual [Compiling documentation](https://github.com/symless/synergy-core/wiki/Compiling).
+- Once things are built, copy the appropriate ./scripts/ and "install" the artifacts to:
+    - Windows: `C:\Program Files\Synergy2\`
+    - Linux: `/opt/synergy2/`
+- Create a suitable configuration, from the view of the server, and drop it into the server's installation directory.
+- Should be good to go!
+
 ## TODO
 
 **The following have been moved to the VS Code Kanban extension! Do NOT edit the

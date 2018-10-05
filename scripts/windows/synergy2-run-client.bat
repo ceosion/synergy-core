@@ -1,5 +1,11 @@
 @ECHO OFF
-echo "192.168.1.46"
+
+echo.
+echo    Synergy Core 2 (BETA) - built from source
+echo.
+echo Starting in server mode...
+echo.
+
 SET /P server="Enter Server IP: "
 .\synergy-core.exe --client %server%
 
